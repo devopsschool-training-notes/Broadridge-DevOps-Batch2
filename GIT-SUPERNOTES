@@ -122,67 +122,88 @@ How to install git?
 Step 1 - Regiter at github.com and Verify Account
 Step 2- Fill this form http://bit.ly/2p3HAVO
 
+=============================================================
+Basic Workflow with Git?
+=======================================
+Step 1- Create repo
+$ git init
+
+Step 2 - Write a Source Code
+
+Step 3 - Add to git[From Working dir to Staging]
+$ git add file1.txt
+
+ONE TIME - 
+============.git/config=====================
+git config user.name "Rajesh Kumar"
+git config user.email "devops@rajeshkumar.xyz"
+git config --list
+
+Step 4 - Commit to Git [From Staging  to Repo]
+git commit -m"Adding my first commit"
+
+Step 5 - See the history of 
+$ git log
+
+        	WHO 
+			WHEN
+			WHY
+			WHERE
+			WHAT 
+
+Step 6 - Do you want to know changes done in WORKING dir - or Staging
+$ git status
 
 
-mrjhade
-SriramNidamanuri
-sridharsunke
-jaideep187
-pranayn5
-dipak-panda
-sankarnathb
-sreekanthpola1
-pradyumna
-vinay7agarwal
-RajkumarUppala
-https://github.com/09Q71A0534
-sridhar540
-HarishAmilineni-hash
-kalyanraju37
-swamineon
-krishna-br
-SharatGit91
-ananmm
-sreenum2001
-rameshkumardonapati
-DilipMCA100
-RavitejaM07
-mokkapatichandra
-ShtlB
-jallipallim
-annapurna-yk
-Prachi55
-09Q71A0534
-Bogatireddy
-munipallyramesh
-krishnacy-br
-sridharsingar
-nagabushanam
-bogatiMR
-munipallyr
-
-ravindra1008
-sivakesava574
-Suren-Raymond
-akshlawange
-adepusa
-sivakumar-tadisetti
-NaiduPilla
-venkatgalla
-lakhsmi220
-https://github.com/reddymule
-lakshmi220
-durga-prasad2
-trveerally
-pradeep-br
-Rakeshkanduri240
-sandhiv
-SreeramanaT
-kondurum
-karthikdhanalakota
-
-
-
+500  cd /e
+  501  mkdir broadridge
+  502  ls
+  503  start .
+  504  cd broadridge/
+  505  clear
+  506  mkdir repo1
+  507  cd repo1/
+  508  clear
+  509  ls
+  510  git init
+  511  ls
+  512  la -la
+  513  ls -la
+  514  start .
+  515  clear
+  516  touch file1.txt
+  517  ls
+  518  start .
+  519  ls
+  520  clear
+  521  git add file1.txt
+  522  git config user.name "Rajesh Kumar"
+  523  git config user.email "devops@rajeshkumar.xyz"
+  524  clear
+  525  git config --list
+  526  clear
+  527  more .git/config
+  528  cat .git/config
+  529  clear
+  530  clear
+  531  git commit -m"Adding my first commit"
+  532  git log
+  533  ls
+  534  git show d7f21a2401d85f584d46b762e529e7f077044f10
+  535  history
+536  clear
+  537  git status
+  538  ls
+  539  git add file2.txt
+  540  git status
+  541  vi file1.txt
+  542  git status
+  543  git commit -m"adding"
+  544  git status
+  545  git add .
+  546  git status
+  547  git commit -m"adding"
+  548  history
 
 
 
