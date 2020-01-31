@@ -1,0 +1,198 @@
+DevOps Complete Workflow
+DevOps in Cloud
+DevOps
+	Imm Release
+	Quality Redefined
+	Cost Reduction
+
+https://www.devopsschool.com/videos/387/complete-cicd-devops-implementation-from-
+
+scratch-using-jenkins-by-devopsschool/
+=================================================================
+Prod - BroadX
+Mgmr - Mgrx..
+
+------------------------
+Hiring - 
+	Architect --- JIRA - Confluence
+	DEV TEam - 10 FEA - 10 DEV
+		Code Integ - Git
+		Code Review
+			Peer 
+			Static - SonarQube
+		Build - Maven - Ant - 
+		UT - junit 
+		Packaging - 
+			SYSTEm
+			APP - 
+		Artifact mgmt - Nexus,
+		---------------------------------
+		Deployment 2 QA - INT - PRE PRO - PROD
+		
+		BroadX4.5 ----> 100 BOXES
+		----------------------
+		50 DEP - 50 L
+		50 AP - 50 NG
+		25 JB - 25 WL 0- 25 TO - 25 WS
+		25 MYSQ 25 MSSQL25 ORA 25 PS
+	`	100 DIFF
+			-----------
+		1 Dep - 9 mins
+		100 Dep - 9 min?
+		----------------------------
+			Parrell
+		COding - Chef - Ansible - Puppt - Salt
+		UI - Octopus Deploy - Udeploy
+
+		=============================================
+		Container - Dcoker
+		
+
+		AT
+
+		code Coverage
+
+		Release
+========================================================================================
+
+==========
+PLAN -> Code -> review -> UT -> Pack -> Archive -> Deploy2Qa+AT+CC -> Release
+------------------------------------------------------------------------------
+JIRA -> Git  -> SonarQube ->Junit-> Jar-> Nexus -> Chef-Sel-Jacoc ->>
+========================================================================================
+
+===============
+					INTEGRATION
+							JENKINS
+
+
+			CD		-  Cont Delivery
+			CD		-  Cont Deployment
+		
+GIT
+NEXUS
+JENINS
+Docker
+Terraform
+Chef
+=====================================
+https://www.devopsschool.com/path
+===================================================================================
+
+What is Git?
+	It is a repo?
+	Version control
+		for Source Code
+	FREE tool
+	Open Source
+	Written by Linus
+	DISTRIBUTED
+	-------------------
+
+Why git?
+	You want to know...
+			WHO 
+			WHEN
+			WHY
+			WHERE
+			WHAT 
+	
+Other tools
+	RCS --> CVS -> SVN -> GIT
+	VSS -> ClearCase -> Perforce -> Mercury -> TFS
+
+========================================
+DISTRIBUTED	VS SERVER_CLIENT
+============================================================
+How to install git?
+	WINDOWS
+		EXE
+		-----
+			git bash == Support basic linux comm + Color
+		https://git-scm.com/
+		NUGET
+		CHOCLATE
+	LINUX
+		RHEL  - yum install git
+		UB  - apt-get install git
+	MAC 
+		DMG 
+			
+
+Step 1 - Regiter at github.com and Verify Account
+Step 2- Fill this form http://bit.ly/2p3HAVO
+
+
+
+mrjhade
+SriramNidamanuri
+sridharsunke
+jaideep187
+pranayn5
+dipak-panda
+sankarnathb
+sreekanthpola1
+pradyumna
+vinay7agarwal
+RajkumarUppala
+https://github.com/09Q71A0534
+sridhar540
+HarishAmilineni-hash
+kalyanraju37
+swamineon
+krishna-br
+SharatGit91
+ananmm
+sreenum2001
+rameshkumardonapati
+DilipMCA100
+RavitejaM07
+mokkapatichandra
+ShtlB
+jallipallim
+annapurna-yk
+Prachi55
+09Q71A0534
+Bogatireddy
+munipallyramesh
+krishnacy-br
+sridharsingar
+nagabushanam
+bogatiMR
+munipallyr
+
+ravindra1008
+sivakesava574
+Suren-Raymond
+akshlawange
+adepusa
+sivakumar-tadisetti
+NaiduPilla
+venkatgalla
+lakhsmi220
+https://github.com/reddymule
+lakshmi220
+durga-prasad2
+trveerally
+pradeep-br
+Rakeshkanduri240
+sandhiv
+SreeramanaT
+kondurum
+karthikdhanalakota
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
