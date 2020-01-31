@@ -1,0 +1,60 @@
+344  pwd
+  345  cd c:
+  346  cd BR-AWS-Batch2
+  347  mkdir BR-AWS-Batch2
+  348  cd BR-AWS-Batch2/
+  349  mkdir Surendra
+  350  cd Surendra
+  351  git init
+  352  start .
+  353  vi test1.txt
+  354  touch test2.txt
+  355  ls -lrta
+  356  git status
+  357  git add .
+  358  git status
+  359  git commit
+  360  git commit -m"First Commit"
+  361  git config user.name "Surendra"
+  362  git config user.email "devops.Suren@test"
+  363  ls -lrt
+  364  ls -lrta
+  365  cd .git
+  366  ls -lrta
+  367  cat config
+  368  cd ..
+  369  clear
+  370  ls -lrt
+  371  ls -lrta
+  372  git config --list
+  373  git status
+  374  ls -lrta
+  375  touch test3.txt
+  376  git status
+  377  vi test3.txt
+  378  git status
+  379  git add test3.txt
+  380  vi test1.txt
+  381  git status
+  382  git commit -m"secondsetofFiles"
+  383  git status
+  384  git add test1.txt
+  385  git status
+  386  git restore
+  387  git restore test1.txt
+  388  git status
+  389  vi test2.txt
+  390  git status
+  391  git add test2.txt
+  392  git status
+  393  git restore .
+  394  git status
+  395  git add .
+  396  git log
+  397  git show ea74745e3b5d546312f0027c2b4027645995fc3a
+  398  git show 65c6177c9ca77c0aa9cecf62cb45fd7256392a09
+  399  git commit .
+  400  git commit -m"FinalCommit"
+  401  git status
+  402  git log
+  403  history
