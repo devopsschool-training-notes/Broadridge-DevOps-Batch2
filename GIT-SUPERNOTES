@@ -205,7 +205,217 @@ $ git status
   547  git commit -m"adding"
   548  history
 
+=================================================
+RAJESH -> GIT(LR)
+                DP  GIT(LR)
+                    RAMM
 
+
+============================================================================
+USER1                           GITHUB                      USER2               
+
+
+
+Branching and Merging
+====================================
+TYPES
+        LOCAL BRANCH    READ and WRITE
+        REMOTE BRANCH   READ ONLY
+        Temporary Branch
+
+
+PULL = FETCH + MERGE
+================================
+
+Branching
+=============
+ 507  git branch
+  508  git branch -r
+  509  git branch -a
+  510  git branch -a
+  511  clear
+  512  git branch login
+  513  git branch -a
+  514  git checkout login
+  515  git branch -a
+  516  clear
+  517  ls
+  518  git checkout master
+  519  ls
+  520  git checkout login
+  521  clear
+  522  touch login.java
+  523  touch register.java
+  524  git statsu
+  525  git status
+  526  clear
+  527  ls
+  528  git status
+  529  git add .
+  530  git commit -m"add lgojn"
+  531  clear
+  532  git commit -m"add lgojn"
+  533  ls
+  534  git checkout master
+  535  ls
+  536  git checkout login
+  537  ls
+  538  history
+
+
+Merging
+==========================================
+FAST FORWARD
+
+ 538  history
+  539  git push origin login
+  540  clear
+  541  touch ff1.txt;git add .;git commit -m"adding ff1"
+  542  touch ff2.txt;git add .;git commit -m"adding ff2"
+  543  git log --oneline
+  544  git merge master
+  545  git checkout master
+  546  git merge login
+  547  clear
+  548  history
+
+ef9fb55
+
+RECURSIVE or 3 way Merging
+
+
+
+Cherry Picking
+
+ 548  history
+  549  clear
+  550  touch master1.txt;git add .;git commit -m"adding master1"
+  551  touch master2.txt;git add .;git commit -m"adding master2"
+  552  git checkout login
+  553  touch login1.txt;git add .;git commit -m"adding login1"
+  554  clear
+  555  touch login2.txt;git add .;git commit -m"adding login2"
+  556  git checkout master
+  557  touch master3.txt;git add .;git commit -m"adding master3"
+  558  git checkout login
+  559  touch login3.txt;git add .;git commit -m"adding login3"
+  560  clear
+  561  ls
+  562  clear
+  563  git log --oneline
+  564  git checkout master
+  565  git log --oneline
+  566  clear
+  567  git merge login
+  568  git log --oneline
+  569  clear
+  570  git log --oneline
+  571  git log
+  572  clear
+  573  git checkout master
+  574  git checkout login
+  575  clear
+  576  touch cherry1.txt;git add .;git commit -m"cheery1"
+  577  touch cherry2.txt;git add .;git commit -m"cheery2"
+  578  touch cherry3.txt;git add .;git commit -m"cheery3"
+  579  clear
+  580  touch cherry4.txt;git add .;git commit -m"cheery4"
+  581  git log --oneline
+  582  clear
+  583  git checkout master
+  584  ls
+  585  clear
+  586*
+  587  git checkout login
+  588  git log --oneline
+  589  git checkout master
+  590  clear
+  591  ls
+  592  git cherry-pick ef9fb55
+  593  ls
+  594  git checkout login
+  595  git log --oneline
+  596  git checkout master
+  597  git log --oneline
+  598  git cherry-pick 37a67b9
+  599  ls
+  600  git merge login
+  601  clear
+  602  ls
+  603  ls
+  604  vi cherry1.txt
+  605  git add .;git commit -m"adding"
+  606  cat cherry
+  607  cat cherry.1
+  608  cat cherry1.txt
+  609  git checkout login
+  610  vi cherry1.txt
+  611  git add .;git commit -m"addindsddsg"
+  612  git checkout master
+  613  clear
+  614  ls
+  615  cat cherry1.txt
+  616  git merge login
+  617  git status
+  618  vi cherry1.txt
+  619  git add .;git commit -m"addindsddsg"
+  620  git status
+  621  git merge login
+  622  history
+ 621  gls
+  622  ls
+  623  git pull origin master
+  624  ls
+  625  clear
+  626  ls
+  627  ls
+  628  git brahch -a
+  629  git branch -a
+  630  clear
+  631  git fetch origin master
+  632  git fetch origin master
+  633  ls
+  634  git branch -a
+  635  git checkout remotes/origin/master
+  636  ls
+  637  git log
+  638  clear
+  639  ls
+  640  git checkout master
+  641  git merge e:   Fri Jan 31 16:59:49 2020 +0530
+  642  clear
+  643  git branch -a
+  644  git merge remotes/origin/master
+  645  ls
+  646  clear
+  647  git fetch origin mastetr
+  648  git fetch origin master
+  649  cler
+  650  ls
+  651  clear
+  652  ls
+  653  git branch -a
+  654  git checkout remotes/origin/master
+  655  ls
+  656  git checkout master
+  657  git merge remotes/origin/master
+  658  ls
+  659  history
+
+
+
+
+Delete a file1
+HEAD
+WHY U SHOULD NOT USE BINARY IN Git
+How to collab together?
+How to see diff?
+Branching 
+        Rebase 
+        Reset
+Undoing
+Merging
+Conflict resol
 
 
 
