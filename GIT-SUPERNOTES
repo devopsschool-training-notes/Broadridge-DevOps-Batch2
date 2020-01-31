@@ -403,6 +403,10 @@ Cherry Picking
   659  history
 
 
+GUI 
+    SourceTree
+    Visutal Studio code
+    Eclipse
 
 
 Delete a file1
@@ -413,10 +417,25 @@ How to see diff?
 Branching 
         Rebase 
         Reset
-Undoing
 Merging
 Conflict resol
+Undoing
+==================
+    clean
+    reset
+    revert
 
+Tutorials  - https://www.devopsschool.com/tutorial/git
+Slides - https://www.devopsschool.com/slides/
+videos - https://www.devopsschool.com/videos/show/git?p=2
+        https://www.youtube.com/channel/UCrXr49kBvXJeQMMl2693c4g    
+blog
+        https://www.devopsschool.com/blog/?s=git
+PDF
+        https://www.devopsschool.com/pdf/git/index.html 
+QA
+        https://www.devopsschool.com/lms/
+        USING GMAIL ID ONLY
 
 
 
