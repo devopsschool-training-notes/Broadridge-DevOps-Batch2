@@ -213,6 +213,10 @@ Step 3C - element ID of Setting.xml and pom.xml MUST match
 Step 3D - mvn deploy
 
 
+How to access a NEXUS?
+http://13.126.143.94:8081/
+admin
+password
 
 
 
