@@ -1,0 +1,221 @@
+Nexus?
+=========================
+What is Nexus?
+        Artifact repo mgmt tool.
+        Tool would manage a repo of Artifact
+
+        Written in JAVA
+                        JRE
+                        PLATFORM INDE
+        From SonaType - SonarSource
+        Release
+            Community 
+            Professional - 30 Days Trial
+
+What is Artifact?
+    Package
+        Contains Binary
+        Source
+        
+    
+Why Nexus?
+`   Security
+    Availability 
+    Standard Layout..... With Best practices
+    Admin Activity ----
+                Roles basd ACCESS mgmt
+                Cleanup
+                Backup and Restore
+    Ingration with all DEVOPS tools.
+                Build tools
+                CI TOOLS
+
+Format of Repo
+==================
+Community vs Professional
+--> JAVA
+--> exe
+--> apk
+--> rpm - yum
+--> apt
+--> py
+--> ruby gem
+--> perl
+--> docker Package
+--> iso
+https://www.sonatype.com/nexus-repository-oss-vs.-pro-features
+
+
+Other tool - Artifactory, Archiva
+
+How to install it?
+        Pre ---> 
+        JRE
+
+        Download 
+
+        Extract
+
+        run it
+
+Download
+https://help.sonatype.com/repomanager3/download
+  1  clear
+    2  ls
+    3  su -c "yum install java-1.8.0-openjdk-devel"
+    4  java
+    5  cler
+    6  clear
+    7  cd /opt/
+    8  ls
+    9  wget https://download.sonatype.com/nexus/3/latest-unix.tar.gz
+   10  yum install wget
+   11  clear
+   12  wget https://download.sonatype.com/nexus/3/latest-unix.tar.gz
+   13  clear
+   14  ls
+   15  tar -zxvf latest-unix.tar.gz
+   16  clear
+   17  ls
+   18  mv nexus-3.20.1-01 nexus
+   19  ls
+   20  cd nexus
+   21  clear
+   22  ls
+   23  cd etc
+   24  ls
+   25  more nexus-default.properties
+   26  clear
+   27  cd ..
+   28  ls
+   29  cd bin
+   30  ls
+   31  ./nexus
+   32  ./nexus start
+   33  ./nexus status
+   34  ./nexus status
+   35  ./nexus status
+   36  ./nexus status
+   37  history
+
+
+TYPES Of repo
+=========================
+Maven Crash Course
+===========================================
+What is Maven?
+            Project mgmt tool.
+                    build
+            Compile
+            Package
+            test
+            document
+            reports
+            AT
+            UT
+            verify
+            Release
+            install 
+            deploy
+            Cleanup
+        Free -
+        Dev in JAVA
+    
+How to install it?
+        JDK
+        Download Maven
+        extrat it
+        /MAVVEN_LOCA/bin --> PATH
+
+        How to verify?
+        mvn
+
+========================================
+Lifecycle
+====================
+Born->KID->TEEN->YOUNG->MID->OLD->DIE
+
+Project Life Cycle in maven?
+=======================
+default
+clean
+site
+http://maven.apache.org/ref/3.6.3/maven-core/lifecycles.html
+
+default - 23 PHASES
+
+PHASES          GOAL            POWWERED BY PLUGINS(CORE)
+--------------------------------
+compile        compile    
+test            test
+package        package     
+install         install
+deploy          deploy      
+=======================================
+Maven 
+    PLUGINS
+            core
+            external 
+
+PROJECT --> SKETALON
+        archtype
+http://maven.apache.org/guides/introduction/introduction-to-archetypes.html
+
+maven-archetype-quickstart
+
+mvn archetype:generate -DgroupId=com.broadridge.devopsschool -DartifactId=chat -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+====================================================================
+
+Types of Nexus Repo?
+        Hosted - READ - WRITE - LOCAL - 
+        Proxy - READ ONly - From Remote a Cache Copy
+        Group - Hosted(S) + Proxy(s)
+
+Access mgmt in Nexus 
+
+    Privilages1
+    Privilages1
+    Privilages1
+                ROLES --
+
+                        USER 
+Advance Workflow in Nexus using Java project with maven
+==============================================================
+Step 1 - Create a repo
+
+Hotsed
+    Release
+        rajesh-release-hosted
+        http://13.126.143.94:8081/repository/rajesh-release-hosted/
+    Snapshot
+        rajesh-release-snapshot
+        http://13.126.143.94:8081/repository/rajesh-release-snapshot/
+Proxy
+        rajesh-proxy-central
+        http://13.126.143.94:8081/repository/rajesh-proxy-central/
+Group
+        rajesh-group
+        http://13.126.143.94:8081/repository/rajesh-group/
+
+Step 2 - Access mgmt -
+
+
+Step 3 - Configure your Maven project.
+=======================================
+https://github.com/devops-school/helloworld-java-maven
+
+Step 3A - Modify pom.xml with Repo location using DistribtionMagt element
+
+Step 3A - Modify Setting.xml with access using server  element
+
+Step 3C - element ID of Setting.xml and pom.xml MUST match
+
+Step 3D - mvn deploy
+
+
+
+
+
+
+
+
