@@ -218,8 +218,23 @@ http://13.126.143.94:8081/
 admin
 password
 
+================================================================
+================================================================
+------ PUll REQUEST ----
+Maven Profile
+Rebase
+Python Repon on Nexus
+Docker Repo
+gener   ic
+Nuget
 
 
+Ant - https://www.devopsschool.com/videos/show/ant?type=video
+Gradle - https://www.devopsschool.com/videos/show/gradle?type=video
+
+
+
+TEST 
 
 
 
