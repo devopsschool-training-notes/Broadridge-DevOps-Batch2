@@ -142,6 +142,9 @@ how to archive?
 
 How to do auto cleanup?
 
+===========================================================================================
+===========================================================================================
+
 Lets do Continous integration?
 ===============================================
 PLAN -> CODE -> REVIEW -> BUILD -> UT -> PACK -> Dep2Archive -> Dep2QA -> AT -> CC ->
@@ -186,4 +189,32 @@ Jenkins
 3. Config Sonarqube
 4. Use it,
     https://github.com/devops-school/java-sonar-runner-simple
+
+===========================================================================================
+===========================================================================================
+How to Schedule and Trigger a job automatically in Jenkins?
+
+@ Fixed time -                                  - Build periodically
+@ Fixed time but when there is SCM changes.     - Poll SCM
+@ Job is triggered by another job at the end    - jobconfigure/Post-Build-Actions/Build Other Projects
+@ Job is triggered based on another job build complete. - Build after other projects are built
+@ When someone push, jobs should trigger
+        How to build when a change is pushed to GitHub in Jenkins?
+        https://www.devopsschool.com/blog/how-to-build-when-a-change-is-pushed-to-github-in-jenkins/
+
+        How to build jobs in jenkins when a change is pushed to Bitbucket
+        https://www.devopsschool.com/blog/build-when-a-change-is-pushed-to-bitbucket/
+
+@ Jobs is triggered using command/script.
+        Jenkins Command line Reference for login and trigger a job
+        https://www.devopsschool.com/blog/jenkins-command-line-reference-for-login-and-trigger-a-job/
+        
+        Jenkins Command line Reference for login and trigger a job
+        https://www.devopsschool.com/blog/jenkins-command-line-reference-for-login-and-trigger-a-job/
+
+        What are the ways to Login Jenkins using Command line ?
+        https://www.devopsschool.com/blog/ways-to-login-jenkins-using-command-line/
+
+http://35.154.114.196:8080/view/RK/job/QATeam/
+https://github.com/devops-school/helloworld-java-maven
 
