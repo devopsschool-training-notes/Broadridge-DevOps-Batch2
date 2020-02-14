@@ -135,6 +135,55 @@ How to org Jobs?
 
 How to copy job?
 
-How to display Junit report
+How to display Junit report?
 
-how to archive
+how to archive?
+==========================================
+
+How to do auto cleanup?
+
+Lets do Continous integration?
+===============================================
+PLAN -> CODE -> REVIEW -> BUILD -> UT -> PACK -> Dep2Archive -> Dep2QA -> AT -> CC ->
+========================================================================================= 
+JIRA -> GIT -> SONAR -> MAVEN -> JUNIT -> JAR -> NEXUS -> CHEF -> SEL -> JACOCO
+[========================================================================================
+
+Rules of Integration with Jenkins
+=================================================
+# PRE - YOUR TOOL must be running with Access details.
+
+Step 1 - INSTALL Tools PLUGINS
+http://35.154.114.196:8080/pluginManager/
+
+Step 2 - Configure Jenkins with a tools details.
+http://35.154.114.196:8080/configure
+
+Step 3 - USE in the JOBS.
+        FoR JIRA        
+        1. I SHOULD KNOW WHICH COMMIT is made for which JIRA TICKET
+        2. Job failed - Created a Ticket and assign a to one.
+
+Step 4 - Verify
+
+Lets deep dive into Trigers and Scheduling?
+Lets deep dive into Feedback?
+
+
+ALL
+JIRA
+http://13.126.45.67:8080/
+devops
+devops123
+Sonarqube Integration with jenkins
+==========================================
+Sonarqube Server
+http://13.126.45.67:9000
+
+Jenkins
+1. Sonarqube Plugins
+2. Scanner tool
+3. Config Sonarqube
+4. Use it,
+    https://github.com/devops-school/java-sonar-runner-simple
+
