@@ -1,0 +1,354 @@
+What is Docker?
+==============================
+	Container mgmt platform.
+	Release
+		CE - FREE - OS
+		EE - ENTRIRE DIFF- PAID
+	Written in Go
+	
+
+What is Container?
+	Is light weight
+	USER SPACE has their
+			MNT
+			PMAP
+			NET
+			Powered by Docker
+				Docker Takes from KERNAL NS.
+Other Container Interface tool
+https://www.devopsschool.com/blog/list-of-top-container-runtime-interface-projects/
+
+Arch of Docker?
+=============================
+Humen -> Docker Client ---RESTAPI--> Docker Deamon(Server) --->ContainerD ---> 
+
+Kernal(NS)
+	--------------------------------------------
+			Docker Engine AKA
+			Docker Platform.
+
+ 14  docker version
+   15  clear
+   16  history
+   17  clear
+   18  which docker
+   19  ps -eaf | grep docker
+   20  ps -eaf
+   21  clear
+   22  history
+
+Component of Docker?
+============================
+Docker Engine
+Docker Image
+		Complete pack for App time
+		It get mounted to Each container
+		Rootfs+Dependecy+APP
+Registry
+	Repository
+		Has Image
+
+	PubliC registry
+		hub.docker.com
+		Google Registyr
+		ECR	
+	Pvt registry
+		Artifactory
+		nexus
+		Docker registry
+Container
+
+How to install Docker?
+13.126.67.250
+ec2-user
+RHEL-7.5_HVM_GA-20180322-x86_64-1-Hourly2-GP2 (ami-5b673c34)
+https://www.devopsschool.com/tutorial/docker/install-config/docker-install-
+
+commuityedition-centos-rhel.html
+
+   1  sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+    2  sudo yum-config-manager --add-repo 
+
+https://download.docker.com/linux/centos/docker-ce.repo
+    3  sudo yum install –y https://dl.fedoraproject.org/pub/epel/epel-release-
+
+latest-7.noarch.rpm
+    4  sudo yum-config-manager --enable rhui-REGION-rhel-server-extras
+    5  sudo yum install -y docker-ce
+    6  docker -v
+    7  clear
+    8  sudo systemctl enable docker
+    9  sudo systemctl start docker
+   10   docker info
+   11  clear
+   12   docker info
+   13  CLEAR
+   14  docker version
+   15  clear
+   16  history
+
+
+DOCKER NEEDS ROOT OR NORMAL USER NEED tO BE PART OF GROUP cALLed "docker"
+==================================
+
+	USER SPACE has their
+			MNT
+			PMAP
+			NET
+			Powered by Docker
+				Docker Takes from KERNAL NS.
+
+   42  docker ps
+   43  ps -eaf | grep docker
+   44  docker run -itd ubuntu
+   45  ps -eaf | grep docker
+   46  clear
+   47  ps -eaf | grep 11021
+   48  ps -eaf | grep 10726
+   49  clear
+   50  docker ps
+   51  docker inspect 6ec5d0055d90 | grep -i ip
+   52  ifconfig
+   53  docker inspect 6ec5d0055d90 | grep -i ip
+   54  docker ps
+   55  docker inspect ff7b68aa1f18 | grep -i ip
+   56  clear
+   57  docker ps
+   58  docker exec 6ec5d0055d90 ps -eaf
+   59  docker exec ff7b68aa1f18 ps -eaf
+   60  clear
+   61  docker ps
+   62  docker exec 6ec5d0055d90 df -kh
+   63  docker exec ff7b68aa1f18 df -kh
+   64  clear
+   65  docker exec ff7b68aa1f18 ls /
+   66  cler
+   67  ls
+   68  clear
+   69  docker ps
+   70  docker exec 6ec5d0055d90 ls /opt
+   71  docker exec ff7b68aa1f18 ls /opt
+   72  docker exec ff7b68aa1f18 touch /opt/devops.txt
+   73  docker exec 6ec5d0055d90 ls /opt
+   74  docker exec ff7b68aa1f18 ls /opt
+   75  docker exec ff7b68aa1f18 df -kh
+   76  history
+
+============================================================
+
+Docker workflow
+===========================
+humen->Client->SERVER-->
+			DO I HAVE THAT image iN LR
+			YES -Go ahead
+			NO - Download from registry.
+
+Container Workflow
+=====================================================
+create->start->stop->restart->pause->unpause->kill->remove
+
+
+RUN
+==========================
+pull->create->start->BECOME
+
+RUN -d
+==========================
+pull->create->start->BECOME
+
+  117  clear
+  118  docker run jenkins
+  119  docker ps -a
+  120  clear
+  121  docker run -d jenkins
+  122  docker ps
+  123  history
+
+
+Decide what app you want to run?
+===============================
+oracle
+mysql
+tomcat
+apache
+mongodb
+jboss
+ubuntu
+centos
+fedora
+rhel
+jenkins
+nexus
+jira
+sonarqube
+kubertes
+
+======================================
+
+  80  docker images
+   81  clear
+   82  ls
+   83  docker images
+   84  docker pull jenkins
+   85  clear
+   86  docker images
+   87  clear
+   88  docker create jenkins
+   89  docker ps
+   90  docker ps -a
+   91  cler
+   92  docker start ddc79bfc6ee0
+   93  docker ps -a
+   94  clear
+   95  docker ps -a
+   96  docker stop ddc79bfc6ee0
+   97  docker ps -a
+   98  docker start ddc79bfc6ee0
+   99  clear
+  100  docker ps -a
+  101  docker restart ddc79bfc6ee0
+  102  docker ps -a
+  103  clear
+  104  docker pause  ddc79bfc6ee0
+  105  docker ps -a
+  106  docker unpause  ddc79bfc6ee0
+  107  docker ps -a
+  108  clear
+  109  docker kill  ddc79bfc6ee0
+  110  clear
+  111  docker ps -a
+  112  docker start ddc79bfc6ee0
+  113  docker ps -a
+  114  clear
+  115  w
+  116  ps
+  117  clear
+  118  docker run jenkins
+  119  docker ps -a
+  120  clear
+  121  docker run -d jenkins
+  122  docker ps
+  123  history
+  124  clear
+  125  history
+
+
+================================================================
+How to consume Container?
+1. How to access containers app on WEB
+ 132  clear
+  133  docker run -d jenkin
+  134  docker run -d jenkins
+  135  docker ps
+  136  docker inspect 707797ab8d68 | grep -i ip
+  137  ckear
+  138  clear
+  139  curl http://172.17.0.2:8080
+  140  clear
+  141  ls
+  142  docker run -d -p 8080:8080 jenkins
+  143  docker ps -a
+  144  history
+
+======================================
+PHYSICAL IS RUNNING AS LONG AS PID 1 is running
+VIRUAL IS RUNNING AS LONG AS PID 1 is running
+CONTAINER IS RUNNING AS LONG AS PID 1 is running
+		PID 1 is  not running - Container is not running.
+PH M - PID 1 is always - SYSTEMD
+V M - PID 1 is always - SYSTEMD
+Container - PID 1 cna be anything.
+
+2. How to go inside a container.
+
+exec way - 
+	it execute an executable inside a contaner.
+	but with -it and /bin/bash - you can go inside a container.
+	$ docker exec -it cont-id /bin/bash
+attach way
+	it attached to a PID 1.
+	$ docker attach cont-id
+
+
+147  docker ps
+  148  clear
+  149  ps -eaf
+  150  clear
+  151  docker -s
+  152  clear
+  153  docker ps
+  154  docker exec 44379110273c ps -eaf
+  155  docker ps -a
+  156  clear
+  157  docker ps -a
+  158  docker stop 44379110273c 612d07fe2a07 707797ab8d68
+  159  docker rm 44379110273c 612d07fe2a07 707797ab8d68
+  160  clear
+  161  docker ps -a
+  162  docker run jenkins
+  163  docker ps - a
+  164  clear
+  165  docker ps -a
+  166  docker run ubuntu
+  167  docker ps -a
+  168  clear
+  169  clear
+  170  docker ps
+  171  docker run -d jenkins
+  172  docker ps
+  173  docker exec a56903133627 ls
+  174  docker exec a56903133627 df
+  175  docker exec a56903133627 ps
+  176  clear
+  177  docker exec a56903133627 rrrr
+  178  docker ps
+  179  docker exec a56903133627 ps -eaf
+  180  ps -eaf
+  181  clear
+  182  docker ps
+  183  docker exec a56903133627 ls
+  184  clear
+  185  docker ps
+  186  docker exec -it a56903133627 /bin/bash
+  187  docker exec -it a56903133627 /bin/bash
+  188  docker ps
+  189  clear
+  190  docker ps
+  191  docker exec a56903133627 ps -eaf
+  192  docker attach a56903133627
+  193  docker ps -a
+  194  clear
+  195  docker ps -a
+  196  docker rm a56903133627 89b6068d5361 0ed12d433c3a
+  197  clear
+  198  docker ps -a
+  199  docker run ubuntu
+  200  docker ps
+  201  docker ps -a
+  202  docker run -it ubuntu
+  203  docker ps -a
+  204  docker run mysql
+  205  docker ps -a
+  206  docker run apache
+  207  docker run httpd
+  208  docker run -d httpd
+  209  docker ps -a
+  210  history
+
+Task 1- Install Docker 
+Task 2 - Proov What is Container
+Task 3 - Container Life cycle
+Task 4 - Access container using HTTP and Go inside a container.
+
+
+
+
+
+
+
+
+
+
+
+
+
