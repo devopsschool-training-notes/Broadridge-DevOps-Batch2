@@ -67,8 +67,12 @@ https://www.devopsschool.com/tutorial/docker/install-config/docker-install-
 commuityedition-centos-rhel.html
 
    1  sudo yum install -y yum-utils device-mapper-persistent-data lvm2
-    2  sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-    3  sudo yum install –y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+    2  sudo yum-config-manager --add-repo 
+
+https://download.docker.com/linux/centos/docker-ce.repo
+    3  sudo yum install –y https://dl.fedoraproject.org/pub/epel/epel-release-
+
+latest-7.noarch.rpm
     4  sudo yum-config-manager --enable rhui-REGION-rhel-server-extras
     5  sudo yum install -y docker-ce
     6  docker -v
@@ -361,6 +365,89 @@ Task 4 - Access container using HTTP and Go inside a container.
 
 Location - https://www.devopsschool.com/notes/docker/2019/
 	rajesh-mumbai.ppk
+
+============================================================================
+What is Docker?
+
+What is Container?
+
+Container comes from
+		IMAGE
+			Registry
+				
+Image --> RUN
+	USER NS
+		MOUNT FRoM IMAGE using MNT NS
+		PMAP  using PMAP NS
+		NET  using NET NS
+
+===========================
+Container workflow
+====================================
+https://www.devopsschool.com/tutorial/docker/commands/
+
+cp
+ 215  docker cp 5d8a3902a1b4:/opt
+  216  docker cp devops.txt 5d8a3902a1b4:/opt
+  217  clear
+  218  docker ps
+  219  docker exec 5d8a3902a1b4 ls /opt/
+  220  rm -rf devops.txt
+  221  ls
+  222  docker cp 5d8a3902a1b4:/opt/devops.txt .
+  223  ls
+  224  history
+cp
+
+ 225  clear
+  226  docker -s
+  227  clear
+  228  docker ps
+  229  docker diff 5d8a3902a1b4
+  230  docker attach 5d8a3902a1b4
+  231  clear
+  232  docker -s
+  233  ckear
+  234  clear
+  235  docker ps -a
+  236  docker diff 5d8a3902a1b4
+  237  clear
+  238  docker ps
+  239  docker rename 5d8a3902a1b4 dev1
+  240  docker ps
+  241  docker run -itd --name rrr ubuntu
+  242  docker ps -
+  243  docker ps
+	
+		
+
+
+
+  244  history
+  245  clear
+  246  docker ps
+  247  docker logs d4ce9bc3ed20
+  248  docker logs ef127429d75b
+  249  docker inspect ef127429d75b |grep -i ip
+  250  clear
+  251  docker ps
+  252  docker logs ef127429d75b
+  253  watch docker logs ef127429d75b
+  254  clear
+  255  docker stats
+  256  docker ps
+  257  clea
+  258  lear
+  259  clear
+  260  ps -eaf | grep docker
+  261  docker ps
+  262  docker top d4ce9bc3ed20
+  263  clear
+  264  docker events
+  265  history
+
+https://www.devopsschool.com/tutorial/docker/commands/
+
 
 
 
