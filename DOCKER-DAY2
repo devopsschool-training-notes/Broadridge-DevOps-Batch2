@@ -1,167 +1,162 @@
- 11  ls
-   12  clear
-   13  docker images
-   14  sudo systemctl enable docker
-   15  sudo systemctl start docker
-   16  clear
-   17  docker images
-   18  docker inof
-   19  docker info
-   20  clear
-   21  cd /var/lib/docker
-   22  clear
-   23  ls
-   24  ls -1
-   25  clear
-   26  ls
-   27  ls image/
-   28  du -sh image/
-   29  du -sh overlay2/
-   30  docker pull ubuntu
-   31  ls
-   32  cd overlay2/
-   33  ls
-   34  clear
-   35  ls
-   36  dh -h --max-depth=1
-   37  df -h --max-depth=1
-   38  df -s --max-depth=1
-   39  df -h --max-depth=1
-   40  du -h --max-depth=1
-   41  clear
-   42  du -h --max-depth=1
-   43  cd ./26e7206a21ae9a132c62b7ec637b7ce8ed314379ee94dd416a1cc9202664431e
-   44  ls
-   45  clear
-   46  ls
-   47  cd diff
-   48  ls
-   49  docker images
-   50  ls
-   51  cd ..
-   52  ls
-   53  clear
-   54  cd ..
-   55  ls
-   56  cd ..
-   57  ls
-   58  cd on
-   59  cd containers/
-   60  ls
-   61  cd ..
-   62  ls
-   63  clear
-   64   ls
-   65  cd image/
-   66  ls
-   67  du -sh
-   68  clear
-   69  ls
-   70  docker create ubuntu
-   71  docker ps -a
-   72  du -sh .
-   73  cd ..
-   74  ls
-   75  cd overlay2/
-   76  clear
-   77  ls
-   78  du -sh b235b3ee86399ca129e036e40d18c4938389b6d25a7d05fb843605bf16cd594c-init
-   79  du -sh b235b3ee86399ca129e036e40d18c4938389b6d25a7d05fb843605bf16cd594c
-   80  docker images
-   81  df -kh
-   82  clear
-   83  docker ps -a
-   84  docker rm 05f545b738aa
-   85  clear
-   86  ls
-   87  docker run -itd ubuntu
-   88  ls
-   89  du -sh 9540fd4d0cb24ed5e3a413347359c00dc440c3bb35f4f2d6910668e9fc3d13fa-init
-   90  du -sh 9540fd4d0cb24ed5e3a413347359c00dc440c3bb35f4f2d6910668e9fc3d13fa
-   91  df -kh
-   92  clear
-   93  ls
-   94  docker ps
-   95  docker stop 9f4842737a5b
-   96  ls
-   97  clear
-   98  df -kh
-   99  cdl
-  100  ls
-  101  cd 9540fd4d0cb24ed5e3a413347359c00dc440c3bb35f4f2d6910668e9fc3d13fa
-  102  clear
-  103  ls
-  104  docker start 9f4842737a5b
-  105  ls
-  106  du -sh merged
-  107  cd ..
-  108  ls
-  109  cd ..
-  110  clear
-  111  ls
-  112  find . -name rajesh.txt
-  113  watch find . -name rajesh.txt
-  114  ls
-  115  ls overlay2/9540fd4d0cb24ed5e3a413347359c00dc440c3bb35f4f2d6910668e9fc3d13fa/diff/
-  116  tree overlay2/9540fd4d0cb24ed5e3a413347359c00dc440c3bb35f4f2d6910668e9fc3d13fa/diff/
-  117  yum install tree -y
-  118  clear
-  119  tree overlay2/9540fd4d0cb24ed5e3a413347359c00dc440c3bb35f4f2d6910668e9fc3d13fa/diff/
-  120  watach tree overlay2/9540fd4d0cb24ed5e3a413347359c00dc440c3bb35f4f2d6910668e9fc3d13fa/diff/
-  121  watch tree overlay2/9540fd4d0cb24ed5e3a413347359c00dc440c3bb35f4f2d6910668e9fc3d13fa/diff/
-  122  cd overlay2/9540fd4d0cb24ed5e3a413347359c00dc440c3bb35f4f2d6910668e9fc3d13fa/diff/
-  123  clear
-  124  ls
-  125  cd etc/
+13.235.13.1
+
+
+[root@ip-172-31-26-97 docker]# ls -1
+builder
+buildkit
+containers		Container DB and Meta
+image			IMAGE DB and META
+network			Docker networking
+overlay2		Layers
+plugins
+runtimes
+swarm
+tmp
+trust
+volumes			Docker Volume
+===================================================
+How to create image?
+1. using Existing container - 
+2. Using Dockerfile - 
+============================================
+jenkins
+
+What user jenkisn contaienr is running?
+What is env var set in jenkins container = env
+Is there volume attached to jenkins? inspect ----?
+What port jenkins allow to expose?
+==========================================
+jenkins
+	openjdk:8-jdk
+		buildpack-deps:buster-scm
+			buildpack-deps:buster-curl
+				debian:buster
+					scratch
+=================================================
+RULE OF DOCKERFILE
+=========================================
+EACH LINE WOULD CREATE ONE LAYER
+	META LAYER would be into "IMAGE"
+	DATA layer would go to overlay2
+EACH LINE layer would have a parent which is pre line layer
+
+FROM ubuntu
+MAINTAINER Rajesh kumar DevOPs@rajeshkumar.xyz
+RUN touch /opt/rajesh1.txt
+RUN touch /opt/rajesh2.txt
+RUN touch /opt/rajesh3.txt
+RUN apt-get update
+RUN apt-get install git -y
+RUN apt-get install apache2 -y
+RUN sudo apt-get install openjdk-8-jre
+ENV RAJESH_HOME IDONTKNW
+COPY devopsschool.txt /opt/
+
+docker build -t raj1 .
+
+
+docker build -f doc2 -t raj2 .
+
+=========================================
+What should be PID 1 and how?
+===============================
+CMD
+	CMD can be replaced.
+ENTRYPOINT
+	ENTRYPOINT CAN not be replaced.
+	cmd passed to image of ENTRYPOINT, add a paramter
+
+
+ 125  cd etc/
   126  ls
   127  docker ps
   128  docker attach 9f4842737a5b
   129  clear
   130  ls
   131  exit
-  132  clear
+  132  cd
   133  ls
-  134  cd /var/lib/docker/overlay2/
-  135  clear
-  136  ls
-  137  docker run -itd ubuntu
-  138  ls
-  139  df -kh
-  140  docker ps -a
-  141  docker start 9f4842737a5b
-  142  clear
-  143  df -kh
-  144  ls
-  145  clear
-  146  docker ps -a
-  147  docker stop 6f210929b6a0 9f4842737a5b
-  148  docker rm 6f210929b6a0 9f4842737a5b
-  149  clear
-  150  docker ps -a
-  151  docker images
-  152  clear
-  153  docker run -it ubuntu
-  154  clear
-  155  ls
-  156  dcoker ps
-  157  docker ps
-  158  docker commit -m"ub-mgm" -a"Rajesh" a6c834ffb9e2
+  134  mkdir raj
+  135  cd raj/
+  136  clear
+  137  vi dockerfile
+  138  more dockerfile
+  139  clear
+  140  docker build -t raj1 .
+  141  clear
+  142  docker images
+  143  docker run -it raj1
+  144  docker history raj1
+  145  c
+  146  clear
+  147  ls
+  148  touch devopsschool.txt
+  149  ls
+  150  ls
+  151  vi doc2
+  152  docker build -t -f doc2 raj2 .
+  153  docker build -f doc2 -t raj2 .
+  154  vi doc2
+  155  docker build -f doc2 -t raj2 .
+  156  vi doc2
+  157  docker build -f doc2 -t raj2 .
+  158  clear
   159  docker images
-  160  docker commit -m"ub-mgm" -a"Rajesh" a6c834ffb9e2 ub4mgm
-  161  docker images
-  162  docker ps
-  163  docker attach a6c834ffb9e2
-  164  c
-  165  clear
-  166  docker ps -a
-  167  docker commit -m"ub-mgm" -a"Rajesh" a6c834ffb9e2 somany
-  168  du -sh d230ea96dbf6f9f19c8bd0c8df6b71622f760ead2b3a684846efd15fe1acfff2
-  169  du -sh 6a1fcc3d94b146926e7307c6b834990f17a6d1a3fb77118fda4faa25b2b3fcb0
+  160  docker run -it raj2
+  161  c
+  162  clear
+  163  docker run ubuntu ls
+  164  clear
+  165  docker stop $(docker ps -a -q)
+  166  docker rm $(docker ps -a -q)
+  167  clear
+  168  docker ps -a
+  169  docker run ubuntu
   170  docker ps -a
-  171  docker images
-  172  docker run somany
-  173  docker ps -a
-  174  history
+  171  docker run ubuntu ls
+  172  docker ps -a
+  173  clear
+  174  docker run jenkins
+  175  docker ps -a
+  176  docker run jenkins ls
+  177  docker ps -a
+  178  history
+  133  clear
+  134  docker ps
+  135  docker inspect 5df4972aa86c
+  136  clear
+  137  docker ps -a
+  138  docker exec 5df4972aa86c ps -eaf
+  139  docker exec 5df4972aa86c env
+  140  clear
+  141  docker inspect 5df4972aa86c
+  142*
+  143  docker ps
+  144  docker inspect 5df4972aa86c | grep -i volume
+  145  clear
+  146  docker ps
+  147  docker exec 5df4972aa86c df -kh
+  148  clear
+  149  ls
+  150  cd /var/lib/docker
+  151  clear
+  152  find . -name rajesh(
+  153  find . -name rajesh*
+  154  watch find . -name rajesh*
+  155  history
 
+LAB - 
+https://www.devopsschool.com/tutorial/docker/dockerfile/dockerfile-example-sample-
+
+lab.html
 
 13.233.230.169
+
+
+
+
+
+
+
+
+
