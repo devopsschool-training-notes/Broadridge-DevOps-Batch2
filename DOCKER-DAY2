@@ -146,9 +146,205 @@ ENTRYPOINT
   155  history
 
 LAB - 
-https://www.devopsschool.com/tutorial/docker/dockerfile/dockerfile-example-sample-lab.html
+https://www.devopsschool.com/tutorial/docker/dockerfile/dockerfile-example-sample-
+
+lab.html
 
 13.233.230.169
+===============================
+How to share images?
+-==============---
+Using tar
+  162  docker images
+  163  docker save -o raj2.tar raj2
+  164  ls
+  165  du -sh raj2.tar
+  166  clear
+  167  docker ps -a
+  168  docker mages
+  169  clear
+  170  docker images
+  171  docker rmi raj2
+  172  clear
+  173  docker images
+  174  ls
+  175  docker load -i raj2.tar
+  176  docker images
+
+
+Using public
+ 180  clear
+  181  docker login
+  182  more /root/.docker/config.json.
+  183  more /root/.docker/config.json
+  184  clear
+  185  ls
+  186  docker images
+  187  docker push raj1
+  188  clear
+  189  docker images
+  190  docker tag raj1 scmgalaxy/broad23456
+  191  docker images
+  192  docker push scmgalaxy/broad23456
+  193  hsitory
+  194  history
+
+
+Using Pvt
+
+How to have data persistency?
+Docker Volume
+=========================
+- volume		/var/lib/docker/volumes
+- mountfs		ANY WHERE IN THE HOST	
+- tmpfs			MEMORY
+
+
+  204  docker stop deccaf9dbff4
+  205  cd /var/lib/docker
+  206  find . -name devopsschool.com
+  207  watch find . -name devopsschool.com
+  208  ks
+  209  ls
+  210  cd volumes/
+  211  clear
+  212  ls
+  213  pwd
+  214  ls
+  215  docker run -d jenkins
+  216  ls
+  217  docker ps -a
+  218  docker stop a5626cb49638
+  219  docker rm a5626cb49638
+  220  ls
+  221  clear
+  222  docker volume
+  223  docker volume ls
+  224  ls
+  225  docker volume rm 
+
+485c1933f8f238aaa075ce8e1e682a3984e603cdadaa2cefc723d91f58a20cc2
+  226  ls
+  227  clear
+  228  docker volume ls
+  229  docker volume
+  230  docker volume prune
+  231  clear
+  232  ls
+  233  docker volume
+  234  clear
+  235  docker volume
+  236  docker volume create
+  237  ks
+  238  ls
+  239  docker volume create raju
+  240  clear
+  241  ls
+  242  docker run -itd -v raju:/opt/rrrr ubuntu
+  243  docker ps
+  244  docker exec f7aefb62b712 df -kh
+  245  clear
+  246  docker attach f7aefb62b712
+  247  clear
+  248  docker ps -a
+  249  docker stop f7aefb62b712
+  250  docker rm f7aefb62b712
+  251  clear
+  252  ls
+  253  cd raju/
+  254  LS
+  255  LS
+  256  clear
+  257  ls
+  258  cd _data/
+  259  ls
+  260  docker ps -a
+  261  cd ..
+  262  ls
+  263  clear
+  264  cd ..
+  265  ls
+  266  docker volume create dev
+  267  ls
+  268  docker run -itd -v raju:/opt/1 -v dev:/opt/2 ubuntu
+  269  docker ps
+  270  docker exec 01ead62e4ad4 df -kh
+  271  docker attach 01ead62e4ad4
+  272  clear
+  273  docker ps -a
+  274  docker rm 01ead62e4ad4
+  275  clear
+  276  ls
+  277  cd /opt/
+  278  ls
+  279  mkdir imp
+  280  cd imp/
+  281  pwd
+  282  docker run -itd -v /opt/imp:/opt/rrrrrrr ubuntu
+  283  docker ps
+  284  docker exec bb5f0d2953c5 df -kh
+  285  cler
+  286  clear
+  287  docker exec bb5f0d2953c5 df -kh
+  288  ls
+  289  touch fdsfds fds fsd  fsd f sdfsd f
+  290  docker attach bb5f0d2953c5
+  291  ls
+  292  history
+==================================================
+TUTORIALS
+https://www.devopsschool.com/tutorial/
+
+BLOG
+https://www.devopsschool.com/blog/
+
+HTML SLIDES
+https://www.devopsschool.com/slides/
+
+PDF
+https://www.devopsschool.com/pdf/
+
+VIDEOS
+https://www.youtube.com/channel/UCrXr49kBvXJeQMMl2693c4g/
+https://www.devopsschool.com/videos/
+
+
+SAMPLE PROGRAMS
+https://github.com/orgs/devopsschool-sample-projects/dashboard
+https://github.com/orgs/devopsschool-projects/dashboard
+https://github.com/devops-school
+
+QUIZ
+https://www.devopsschool.com/lms
+
+How to contact?
+================================================
+http://rajeshkumar.xyz/
+
+Feedback
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
